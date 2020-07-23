@@ -19,6 +19,8 @@
     /*--------------------- END FONTS ---------------------*/
     /*--------------------- SPACING ---------------------*/
     --base_spacing-size: 1rem; /*Margin y Padding*/
+    --secondary_spacing-size: 1.5rem;
+    --terciary_spacing-size: 2rem;
     /*--------------------- END SPACING ---------------------*/
 }
 
@@ -31,23 +33,70 @@ html {
 
 /*--------------------- WRAPPER ---------------------*/
 
+.wrapper {
+    margin: 0 auto;
+    width: var(--wrapper-width);
+}
+
+.content {
+    display: flex;
+    border-top: 1px dotted var(--primary-theme);
+    padding-top: var(--base_spacing-size);
+    margin-bottom: var(--base_spacing-size);
+}
+
+.content-title {
+    font-size: var(--base_titles_size);
+    margin-bottom: var(--base_spacing-size);
+}
+
+.content-info {
+    background: var(--second-theme);
+    padding: var(--base_spacing-size);
+}
+
+.content-info--second {
+    margin-top: var(--base_spacing-size);
+}
+
+.content-aside {
+    background: var(--second-theme);
+    border-left: 1px solid var(--primary-theme);
+    padding: var(--base_spacing-size);
+    margin-left: var(--terciary_spacing-size);
+}
+
+.content-figure {
+    width: 250px;
+    height: 250px;
+}
+
+.content-img {
+    width: 100%;
+}
 /*--------------------- END WRAPPER ---------------------*/
 
 /*--------------------- HEADER ---------------------*/
 .header {
     background-color: var(--second-theme);
     width: 100%;
+    margin-bottom: var(--base_spacing-size);
 }
 
 .header-content {
     width: var(--wrapper-width);
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 .title-header {
     font-size: var(--big_titles_size);
     margin-bottom: var(--base_spacing-size);
 }
+
+/*--------------------- END HEADER ---------------------*/
+
+/*--------------------- MENU -------------------*/
 
 .nav-menu {
     display: flex;
@@ -84,18 +133,9 @@ html {
     color: var(--primary-theme);
     text-decoration: none;
 }
-/*--------------------- END HEADER ---------------------*/
-
-/*--------------------- MENU -------------------*/
-
 /*--------------------- END MENU -------------------*/
 
 /*--------------------- BODY BASE -------------------*/
-
-.wrapper {
-    margin: 0 auto;
-    width: var(--wrapper-width);
-}
 
 /*--------------------- END BODY BASE -------------------*/
 
