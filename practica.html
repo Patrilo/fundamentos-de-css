@@ -27,7 +27,8 @@
       <section class="content">
         <article>
           <h2 class="content-title">Mi noticia</h2>
-          <p class="content-info">Minions <b>ipsum</b> tank yuuu! Wiiiii gelatooo pepete po kass hana dul sae tatata bala tu tatata bala tu
+          <p class="content-info">Minions <b>ipsum</b> tank yuuu! Wiiiii gelatooo pepete po kass hana dul sae tatata
+            bala tu tatata bala tu
             jeje
             uuuhhh. La bodaaa tank yuuu! La bodaaa daa. Bananaaaa me want bananaaa! Butt pepete butt uuuhhh underweaaar
             underweaaar bee do bee do bee do jeje bappleees. Pepete baboiii pepete underweaaar. La bodaaa poulet tikka
@@ -37,7 +38,8 @@
             belloo! Poulet tikka masala underweaaar potatoooo aaaaaah. Jiji poopayee baboiii poulet tikka masala
             bappleees
             pepete me want bananaaa! Wiiiii.</p>
-          <p class="content-info content-info--second">Underweaaar potatoooo me want bananaaa! Jeje para tú bappleees chasy bappleees tank yuuu! Para tú. Belloo!
+          <p class="content-info content-info--second">Underweaaar potatoooo me want bananaaa! Jeje para tú bappleees
+            chasy bappleees tank yuuu! Para tú. Belloo!
             me
             want bananaaa! Uuuhhh pepete butt para tú. Poopayee belloo! Aaaaaah bananaaaa butt bananaaaa bananaaaa
             belloo!
@@ -55,70 +57,78 @@
           </figure>
         </aside>
       </section>
-      <section>
-        <h2>Mi formulario</h2>
+      <section class="form-container">
+        <h2 class="form-title">Mi formulario</h2>
         <form action="personalData">
           <fieldset>
-            <legend>Datos personales</legend>
-            <div>
-              <label for="name">Nombre</label>
-              <input type="text" id="name" name="name">
+            <legend class="form-legend">Datos personales</legend>
+            <div class="form-section">
+
+              <div class="form-item">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" class="pepito">
+              </div>
+              <div class="form-item">
+                <label for="surname">Apellidos</label>
+                <input type="text" id="surname" name="surname">
+              </div>
+              <div class="form-item--prueba">
+                <label for="telephone" class="pepe">Teléfono
+                  <input type="tel" id="telephone" name="telephone_number">
+                </label>
+              </div>
             </div>
-            <div>
-              <label for="surname">Apellidos</label>
-              <input type="text" id="surname" name="surname">
+            <div class="form-section">
+              <div class="form-item--secondary">
+                <input type="radio" id="dni" name="identityNumber" value="dni">
+                <label for="dni">DNI</label>
+                <input type="radio" id="nie" name="identityNumber" value="nie">
+                <label for="nie">NIE</label>
+              </div>
+              <div class="form-item">
+                <label for="numberIdentity">Nº Documento</label>
+                <input type="number" id="numberIdentity" name="numberIdentity">
+              </div>
             </div>
-            <div>
-              <label for="telephone">Teléfono
-                <input type="tel" id="telephone" name="telephone_number">
-              </label>
-            </div>
-            <div>
-              <input type="radio" id="dni" name="identityNumber" value="dni">
-              <label for="dni">DNI</label>
-              <input type="radio" id="nie" name="identityNumber" value="nie">
-              <label for="nie">NIE</label>
-            </div>
-            <div>
-              <label for="numberIdentity">Nº Documento</label>
-              <input type="number" id="numberIdentity" name="numberIdentity">
+
+          </fieldset>
+          <fieldset class="form-list">
+            <legend class="form-legend">Otros datos</legend>
+            <div class="prueba">
+              <div class="form-list__input">
+                <label for="numberPerson">Número de hermanos/as</label>
+                <input type="number" id="numberPerson" name="numberIdentity">
+              </div>
+              <div class="form-list__content">
+                <p class="form-list__title">Deportes favoritos</p>
+                <ol>
+                  <li>
+                    <label for="football">Fútbol</label>
+                    <input type="checkbox" id="football" value="football" name="football">
+                  </li>
+                  <li>
+                    <label for="basket">Baloncesto</label>
+                    <input type="checkbox" id="basket" value="basket" name="basket">
+                  </li>
+                  <li>
+                    <label for="rugby">Rugby</label>
+                    <input type="checkbox" id="rugby" value="rugby" name="rugby">
+                  </li>
+                  <li>
+                    <label for="padel">Padel</label>
+                    <input type="checkbox" id="padel" value="padel" name="padel">
+                  </li>
+                  <li>
+                    <label for="handball">Pelota vasca</label>
+                    <input type="checkbox" id="handball" value="handball" name="basket">
+                  </li>
+                </ol>
+              </div>
             </div>
           </fieldset>
-          <fieldset>
-            <legend>Otros datos</legend>
-            <div>
-              <label for="numberPerson">Número de hermanos/as</label>
-              <input type="number" id="numberPerson" name="numberIdentity">
-            </div>
-            <div>
-              <p>Deportes favoritos</p>
-              <ol>
-                <li>
-                  <label for="football">Fútbol</label>
-                  <input type="checkbox" id="football" value="football" name="football">
-                </li>
-                <li>
-                  <label for="basket">Baloncesto</label>
-                  <input type="checkbox" id="basket" value="basket" name="basket">
-                </li>
-                <li>
-                  <label for="rugby">Rugby</label>
-                  <input type="checkbox" id="rugby" value="rugby" name="rugby">
-                </li>
-                <li>
-                  <label for="padel">Padel</label>
-                  <input type="checkbox" id="padel" value="padel" name="padel">
-                </li>
-                <li>
-                  <label for="handball">Pelota vasca</label>
-                  <input type="checkbox" id="handball" value="handball" name="basket">
-                </li>
-              </ol>
-            </div>
-          </fieldset>
-          <div>
-            <input type="reset" value="Reset" />
-            <input type="submit" value="Enviar" />
+          <div class="form-button">
+            <input type="reset" value="Reset" class="btn" />
+            <input type="submit" value="Enviar" class="btn" />
           </div>
         </form>
       </section>
